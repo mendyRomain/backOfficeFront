@@ -6,5 +6,29 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  navs: Array<any>;
+
+  constructor() {
+    this.sideMenu();
+  }
+
+
+  sideMenu(){
+    this.navs=[
+      {name:'Home',
+      path:'home'},
+      // {
+      //   name:'Photos',
+      //   path:'tabs'
+      // }, 
+      {
+        name:'Contact',
+        path:'contact'
+      },
+      {
+        name:'Commande',
+        path:'commande'
+      }
+    ]
+  }
 }
